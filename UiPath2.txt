@@ -1,0 +1,20 @@
+Create a new Sequence.
+Open the scanned invoice, the invoice used in the 
+example can be downloaded here. We recommend
+ using Adobe Acrobat Reader for compatibility reasons.
+As explained here, scrape the employee’s email by
+ using OCR technology. A container, Attach Window
+ renamed in this example to Attach PDF, that holds
+ the selector and lets all the other activities know 
+where to perform actions is generated. In it, there 
+are a Find Image, that selects the anchor for
+ relative scraping, a Get OCR Text that retrieves 
+the email address of the employee, and two Set 
+Clipping Region activities: one to translate the 
+first clipping region to the second one, and the
+ other to reset the clipping region.
+In the Variables Panel, create a new GenericValue
+ variable, called email.
+Enter the email variable into the Text property 
+of the previously generated Get OCR Text activity.
+Name the above sequence Read Email
