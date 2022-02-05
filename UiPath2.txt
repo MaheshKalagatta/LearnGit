@@ -18,3 +18,5 @@ In the Variables Panel, create a new GenericValue
 Enter the email variable into the Text property 
 of the previously generated Get OCR Text activity.
 Name the above sequence Read Email
+
+Test check
